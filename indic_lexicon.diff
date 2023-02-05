@@ -1,0 +1,34 @@
+38,39c38,39
+< (require 'lts)
+< (require 'lexicons)
+---
+> ; (require 'lts)
+> ; (require 'lexicons)
+41c41
+< (setup_cmu_lex)
+---
+> ; (setup_cmu_lex)
+59,62c59
+< (set! lex:language_variant 
+<       (car (load (path-append 
+<                   INST_LANG_VOX::dir
+<                   "festvox/language_variant.scm") t)))
+---
+> (set! lex:language_variant "tel")
+77,81c74
+< (set! indic_char_ord_map
+< 	  (load (path-append 
+<                  INST_LANG_VOX::dir
+<                  "festvox/indic_utf8_ord_map.scm") t))
+< 
+---
+> (set! indic_char_ord_map (load "indic_utf8_ord_map.scm" t))
+84,89c77
+< (set! indic_ord_phone_map
+< 	  (load 
+<            (path-append
+<             INST_LANG_VOX::dir
+<            "festvox/unicode_sampa_map_new.scm") t))
+< 
+---
+> (set! indic_ord_phone_map (load "unicode_sampa_map_new.scm" t))
