@@ -42,7 +42,7 @@ The major challenge is to adapt the frontend code, in a way that you can use it 
   - just a list of words (one word in one line)
   - a kaldi-like lexicon file with the tab as the delimiter between the words and the pronunciation.
 
-For example inputs, we use [te_sample.txt](/te_sample.txt) and [ta_sample.txt](/ta_sample.txt), files of 100 telugu and tamil words respectively. List of all languages supported by the indic frontend are [presented here](http://festvox.org/bsv/x3528.html).
+For example inputs, we use [te_sample.txt](/te_sample.txt) and [ta_sample.txt](/ta_sample.txt), files of 100 telugu and tamil words respectively. List of all language codes supported are [given here](https://github.com/ma08/run_cmu_indic/blob/570e78d8745ecf58ee630d96ba69b49c89d1b042/indic_lexicon.scm#L50).
 
 ### Steps to run `build_dict.sh`:
 - Clone this repo $ `git clone https://github.com/ma08/run_cmu_indic && cd run_cmu_indic`
