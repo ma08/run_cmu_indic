@@ -60,9 +60,6 @@
 ;; tam Tamil
 ;; tel Telugu
 
-;; Voice should set this variable
-(set! lex:language_variant "tel")
-
 (defvar lex:use_eng_share "0")  ;; "1" if the current voice contains English data
 
 (define (delete_final_schwa)

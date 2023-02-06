@@ -1,21 +1,26 @@
-38,39c38,39
+38,39c38,44
 < (require 'lts)
 < (require 'lexicons)
 ---
+> ;==========================================
+> ; Modified by 
+> ; Author: Sourya Kakarla
+> ;==========================================
+> 
 > ; (require 'lts)
 > ; (require 'lexicons)
-41c41
+41c46
 < (setup_cmu_lex)
 ---
 > ; (setup_cmu_lex)
-59,62c59
+58,63d62
+< ;; Voice should set this variable
 < (set! lex:language_variant 
 <       (car (load (path-append 
 <                   INST_LANG_VOX::dir
 <                   "festvox/language_variant.scm") t)))
----
-> (set! lex:language_variant "tel")
-77,81c74
+< 
+77,81c76
 < (set! indic_char_ord_map
 < 	  (load (path-append 
 <                  INST_LANG_VOX::dir
@@ -23,7 +28,7 @@
 < 
 ---
 > (set! indic_char_ord_map (load "indic_utf8_ord_map.scm" t))
-84,89c77
+84,89c79
 < (set! indic_ord_phone_map
 < 	  (load 
 <            (path-append
