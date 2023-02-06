@@ -9,7 +9,10 @@
 (set! libdir "/usr/share/festival/")
 (load (path-append libdir "init.scm"))
 (load "indic_lexicon.scm")
+
 (define lang (car argv))
 (define word (cadr argv))
+
+(set! lex:language_variant lang)
 (define pron (car (car (car (cdr (cdr (indic_ml_lts_function word "")))))))
 (format t "%s\t%l\n" word pron)
